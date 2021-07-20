@@ -21,15 +21,6 @@ async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
 
-@bot.command(name='Pine', help='Simply insults Pine')
-async def PineInsult(ctx):
-    PineInsults = [
-        'Fck you Pine', 'Pine is a fag', 'Pines mom a hoe', 'Pine is retarded',
-        'Pine you filthy ching chong'
-    ]
-    response = random.choice(PineInsults)
-    await ctx.send(response)
-
 
 @bot.command(name='roll_dice', help='Simulates rolling dice.')
 async def roll(ctx, number_of_dice: int, number_of_sides: int):
